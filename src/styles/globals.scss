@@ -1,0 +1,19 @@
+@import '@/styles/variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $poppins_regular;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+
+#demo-simple-select{
+    padding: 0 30px !important;
+    font-size: 14px;
+     
+    @media (max-width: '1024px') {
+        font-size: 12px;
+        padding: 0 10px !important;
+    }
+}

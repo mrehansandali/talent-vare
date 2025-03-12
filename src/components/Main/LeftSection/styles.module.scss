@@ -1,0 +1,126 @@
+@import '@/styles/variables.scss';
+
+.container{
+    width: 100%;
+    font-family: $poppins_regular;
+    
+    .userDetails{
+        border-radius: 10px;
+        background-color: #fff;
+        width: 100%;
+        padding-bottom: 20px;
+
+        .destopPic{
+            width: 100%;
+
+            img{
+                width: 100%;
+                height: auto;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+        }
+
+        .profilePic{
+            width: 86px;
+            height: 86px;
+            margin: auto;
+            margin-top: -50px;
+            
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .nameAndTagline{
+            padding: 0 10px;
+            margin-top: 10px;
+            text-align: center;
+            
+            h2{
+                font-size: 18px;
+                margin-bottom: 4px;
+            }
+            
+            h3{
+                font-size: 14px;
+                max-width: 242px;
+                margin: auto;
+                color: #333333;
+                margin-bottom: 4px;
+            }
+            
+            p{
+                font-size: 12px;
+                color: #585D6E;
+                margin-bottom: 4px;
+            }
+        }
+    }
+
+    .otherDetails{
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-top: 10px;
+
+        li{
+            border-bottom: 1px solid #E9ECEF;
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6.5px 0 ;
+
+            p{
+                font-size: 14px;
+                color: #333333;
+            }
+
+            span{
+                font-size: 16px;
+                color: $blue_color;
+            }
+
+        }
+
+        li:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .calendarInfo{
+        padding: 4px 10px;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-top: 10px;
+
+        .accordion{
+            box-shadow: none;
+
+            .accordionHeader{
+                padding: 0;
+
+                span{
+                    flex-direction: column !important;
+                    margin: 0 !important;
+
+                    h3{
+                        font-size: 16px;
+                    }
+
+                    p{
+                        color: #737A91;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .accordionIcon{
+                font-size: 20px;
+            }
+        }
+    }
+}

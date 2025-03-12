@@ -1,0 +1,134 @@
+@import '@/styles/variables.scss';
+
+.container{
+
+    .heading{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        h2{
+            font-weight: 500;
+            font-size: 18px;
+            color: #333333;
+        }
+
+        a{
+            font-size: 14px;
+            color: $blue_color;
+        }
+    }
+
+    .jobs{
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        @media (max-width: '1024px') {
+            gap: 10px;
+        }
+        
+        .jobPost{
+            max-width: 182px;
+            background-color: #fff;
+            padding: 10px 19px;
+            border-radius: 10px;
+
+            @media (max-width: '1024px') {
+                max-width: 150px;
+               padding: 10px 15px;
+            }
+
+            .tag{
+                font-size: 10px;
+                font-weight: 600;
+                color: #333333;
+                margin-bottom: 5px;
+            }
+
+            .titleAndIcon{
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                margin-bottom: 5px;
+
+                .jobIcon{
+                    width: 40px;
+                    height: 40px;
+                    background-color: #FAFAFA;
+                    border-radius: 9px;
+                    margin-right: 3px;
+                    
+                    img{
+                        width: 80%;
+                        height: 80%;
+                        margin: 3px 0 0 3px;
+                    }
+                }
+
+                .title{
+                    color: #333333;
+                    width: 115px;
+
+                    h3{
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+
+                    p{
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .location{
+                margin-bottom: 2px;
+                font-size: 12px;
+                letter-spacing: -0.5px;
+                font-weight: 500;
+                color: #585D6E;
+                display: flex;
+                align-items: center;
+
+                .icon{
+                    margin-right: 7px;
+                    margin-top: 2px;
+                    color: #585D6E;
+                }
+
+                .applicants{
+                    color: $blue_color;
+                    padding-left: 3px;
+                    border-left: 1px solid #585D6E;
+                    line-height: -1px;
+                }
+            }
+
+            .applyBtnAndIcon{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 15px;
+
+                button{
+                    padding: 10px 29px;
+                    color: #fff;
+                    background-color: $blue_color;
+                    border-radius: 6px;
+                    border: 0;
+                    font-size: 12px;
+
+                    @media (max-width: '1024px') {
+                        padding: 8px 15px;
+                    }
+                }
+
+                .saveIcon{
+                    width: 11px;
+                    height: 16px;
+                }
+            }
+        }
+    }
+}
